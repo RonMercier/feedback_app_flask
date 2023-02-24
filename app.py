@@ -8,11 +8,11 @@ ENV = 'dev'
 
 if ENV == 'dev':
     app.debug = True
-    app.config['SQLALCHEMY_DATABASE_URI'] = 'postgresql://postgres:postgres@localhost:5432/feedback_app'
+    app.config['SQLALCHEMY_DATABASE_URI'] = 'postgresql://linpostgres:P8Y04^OZJ6YyyWwa@lin-15887-5140-pgsql-primary.servers.linodedb.net:5432/feedback_app'
 
 else:
     app.debug = False
-    app.config['SQLALCHEMY_DATABASE_URI'] = 'postgresql://postgres:postgres@localhost:5432/feedback_app'
+    app.config['SQLALCHEMY_DATABASE_URI'] = 'postgresql://linpostgres:P8Y04^OZJ6YyyWwa@lin-15887-5140-pgsql-primary.servers.linodedb.net:5432/feedback_app'
 
 app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
 
